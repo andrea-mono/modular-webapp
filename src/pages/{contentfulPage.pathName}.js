@@ -1,8 +1,8 @@
-import * as React from "react";
-import "../assets/css/index.css";
-import Renderer from "../components/Renderer";
-import { graphql } from "gatsby";
-import { map } from "../utils/components";
+import * as React from 'react';
+import '../assets/css/index.css';
+import Renderer from '../components/Renderer';
+import { graphql } from 'gatsby';
+import { map } from '../utils/components';
 
 const PageRenderer = ({ data }) => {
   const { content, ...page } = data.contentfulPage;

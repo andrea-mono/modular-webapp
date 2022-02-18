@@ -1,6 +1,6 @@
-import React from "react";
-import Card from "./Card/Card";
-import Section from "./Section/Section";
+import React from 'react';
+import Card from './Card/Card';
+import Section from './Section/Section';
 
 const components = {
   section: Section,
@@ -9,7 +9,7 @@ const components = {
 
 const Renderer = (JSONSchema) => {
   const { name: componentName, ...props } = JSONSchema;
-  if (typeof components[componentName] === "undefined") return null;
+  if (typeof components[componentName] === 'undefined') return null;
 
   return React.createElement(components[componentName], props, null);
 };

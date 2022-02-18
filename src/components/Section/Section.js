@@ -1,6 +1,6 @@
-import React from "react";
-import Renderer from "../Renderer";
-import { map } from "../../utils/components";
+import React from 'react';
+import Renderer from '../Renderer';
+import { map } from '../../utils/components';
 
 const Section = ({ backgroundColor, content = [] }) => {
   const components = map(content);
