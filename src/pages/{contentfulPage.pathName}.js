@@ -6,7 +6,6 @@ import { map } from '../utils/components';
 
 const PageRenderer = ({ data }) => {
   const { content, ...page } = data.contentfulPage;
-  console.log(data);
   const components = map(content);
 
   return (
