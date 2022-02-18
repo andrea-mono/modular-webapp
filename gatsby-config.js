@@ -1,13 +1,20 @@
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
-      title: `My Gatsby Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `My Gatsby Site`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [{
-    resolve: 'gatsby-source-contentful',
-    options: {
-      "accessToken": "\u0016",
-      "spaceId": "\u0016"
-    }
-  }]
+  plugins: [
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+  ],
 };
