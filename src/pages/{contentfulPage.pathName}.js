@@ -1,12 +1,12 @@
-import * as React from 'react';
-import '../assets/css/index.css';
-import Renderer from '../components/Renderer';
-import { graphql } from 'gatsby';
-import { map } from '../utils/components';
+import * as React from 'react'
+import '../assets/css/index.css'
+import Renderer from '../components/Renderer'
+import { graphql } from 'gatsby'
+import { map } from '../utils/components'
 
 const PageRenderer = ({ data }) => {
-  const { content, ...page } = data.contentfulPage;
-  const components = map(content);
+  const { content, ...page } = data.contentfulPage
+  const components = map(content)
 
   return (
     <main>
@@ -14,8 +14,8 @@ const PageRenderer = ({ data }) => {
         <Renderer key={component.id} {...component} />
       ))}
     </main>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query ($pathName: String) {
@@ -27,6 +27,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
-export default PageRenderer;
+export default PageRenderer

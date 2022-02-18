@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql } from 'gatsby'
 
 export const SectionFragment = graphql`
   fragment Section on ContentfulSection {
@@ -13,4 +13,4 @@ export const SectionFragment = graphql`
       }
     }
   }
-`;
+`

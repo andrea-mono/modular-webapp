@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql } from 'gatsby'
 
 export const CardFragment = graphql`
   fragment Card on ContentfulCard {
@@ -12,4 +12,4 @@ export const CardFragment = graphql`
       }
     }
   }
-`;
+`
