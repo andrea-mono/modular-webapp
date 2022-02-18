@@ -1,4 +1,5 @@
 export const map = (content) => {
+  if (!content) return []
   return content.map((component) => {
     const { sys, ...rest } = component
     return {

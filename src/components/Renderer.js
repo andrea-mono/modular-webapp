@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from './Card/Card'
-import Section from './Section/Section'
+import Card from './Card'
+import Section from './Section'
 
 const components = {
   section: Section,

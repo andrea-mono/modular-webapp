@@ -5,6 +5,9 @@ export const SectionFragment = graphql`
     id
     title
     backgroundColor
+    content {
+      ...Card
+    }
     sys {
       contentType {
         sys {
